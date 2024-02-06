@@ -1,8 +1,20 @@
+"use client";
 import Image from "next/image";
-import Logo from "../img/logo.png";
-
+import Logo from "../img/logo.png"; 
+import { useState } from "react";
 
 const Header = () => {
+  let [ sel , setSet ] = useState(0)
+
+  const handleClick = () => {
+
+    const targetElement = document.getElementById('scrollToDiv');
+
+    if (targetElement) { 
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav
       style={{
@@ -19,6 +31,7 @@ const Header = () => {
         </div>
         <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <div
+            onClick={()=>{handleClick()}}
             class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-user"
           >
@@ -28,7 +41,9 @@ const Header = () => {
             >
               <li>
                 <div
-                  style={{ color: "#fff" , borderColor : '#fff' , padding: 10 ,  borderRadius : 5 , borderWidth : 1 , width : 157 , textAlign : 'center' }}
+                
+                  style={{ color: "#fff" , borderColor : '#fff' , padding: 10 ,  borderRadius : 5 , borderWidth : 1 , width : 157 , textAlign : 'center' ,
+                cursor : 'pointer' }}
                   aria-current="page"
                 >
                   Contact us
@@ -36,55 +51,9 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div
-            class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
-            id="user-dropdown"
-          >
-            <div class="px-4 py-3">
-              <span class="block text-sm text-gray-900 dark:text-white">
-                Bonnie Green
-              </span>
-              <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">
-                name@flowbite.com
-              </span>
-            </div>
-            <ul class="py-2" aria-labelledby="user-menu-button">
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
-                  Settings
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
-                  Earnings
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                >
-                  Sign out
-                </a>
-              </li>
-            </ul>
-          </div>
+         
           <button
-            data-collapse-toggle="navbar-user"
+            data-collapse-toggle="navbar-default"
             type="button"
             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-user"
@@ -109,30 +78,38 @@ const Header = () => {
           </button>
         </div>
         <div
+        
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-user"
+          id='navbar-default'
         >
           <ul
+            
             class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg 
            md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0    dark:border-gray-700"
           >
             <li>
-              <div
-                style={{ color: "#FFE601" }}
-                class="block py-2 px-3   bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                aria-current="page"
+              <div onClick={()=>{
+                setSet(0)
+              }}
+                style={ sel === 0 ?{ color: "#FFE601" , cursor : 'pointer' } : {cursor : 'pointer' } }
+                class="block py-2 px-3   rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Home
               </div>
             </li>
             <li>
-              <div class="block py-2 px-3   rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              <div onClick={()=>{
+                setSet(1)
+                handleClick()
+              }} style={ sel === 1 ?{ color: "#FFE601" , cursor : 'pointer' } : {cursor : 'pointer' } }  class="block py-2 px-3   rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                 About
               </div>
             </li>
             <li>
-              <div class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                Careers
+              <div  onClick={()=>{
+                setSet(2)
+              }}   style={ sel === 2 ?{ color: "#FFE601" , cursor : 'pointer' } : {cursor : 'pointer' } }  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                <a href="https://www.wenoxo.in/portfolio.html" target="_blank" >Portfolio</a>
               </div>
             </li>
           </ul>

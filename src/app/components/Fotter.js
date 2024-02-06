@@ -11,14 +11,14 @@ import v6 from "../img/v6.png";
 const Fotter = () => {
   return (
     <>
-      <footer class="  rounded-lg shadow  " style={{ marginTop : 100 , marginBottom : 40 }}>
+      <footer id="scrollToDiv" class="  rounded-lg shadow  " style={{ marginTop : 100 , marginBottom : 40 }}>
         <div
           class="w-full mx-auto   p-4 md:flex md:items-center md:justify-between"
           style={{ borderBottom: "1px solid #262626" }}
         >
-          <Image src={Logo} alt="user photo" width={151} height={31} />
-          <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
+          <Image src={Logo} alt="user photo" width={151} height={31} className="dfcsfdsdvsafdwq" />
+          <ul style={{ justifyContent :'center' }} class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li style={{ cursor : 'pointer' }}>
               <a
                 style={{ color: "#fff" }}
                 href="#"
@@ -27,7 +27,7 @@ const Fotter = () => {
                 About
               </a>
             </li>
-            <li>
+            <li style={{ cursor : 'pointer' }} >
               <a
                 style={{ color: "#fff" }}
                 href="#"
@@ -36,7 +36,7 @@ const Fotter = () => {
                 Service
               </a>
             </li>
-            <li>
+            <li style={{ cursor : 'pointer' }} >
               <a
                 style={{ color: "#fff" }}
                 href="#"
@@ -45,12 +45,12 @@ const Fotter = () => {
                 Work
               </a>
             </li>
-            <li>
+            <li style={{ cursor : 'pointer' }} >
               <a style={{ color: "#fff" }} href="#" class="hover:underline">
                 Proccess
               </a>
             </li>
-            <li>
+            <li style={{ cursor : 'pointer' }} >
               <a
                 style={{ color: "#fff" }}
                 href="#"
@@ -59,7 +59,7 @@ const Fotter = () => {
                 About
               </a>
             </li>
-            <li>
+            <li style={{ cursor : 'pointer' }} >
               <a
                 style={{ color: "#fff" }}
                 href="#"
@@ -68,7 +68,7 @@ const Fotter = () => {
                 Careers
               </a>
             </li>
-            <li>
+            <li style={{ cursor : 'pointer' }}>
               <a style={{ color: "#fff" }} href="#" class="hover:underline">
                 Contact
               </a>
@@ -126,6 +126,7 @@ const Fotter = () => {
                 width={24}
                 height={24}
                 style={{ marginLeft: 5 }}
+                className="ffc"
               />
               <div
                 style={{
@@ -135,6 +136,7 @@ const Fotter = () => {
                   marginRight: 10,
                   marginTop: 4,
                 }}
+                className="frtcccc"
               >
                 info@wenoxo.in
               </div>
@@ -145,6 +147,7 @@ const Fotter = () => {
                 width={24}
                 height={24}
                 style={{ marginLeft: 5 }}
+                className="ffc"
               />
               <div
                 style={{
@@ -154,6 +157,7 @@ const Fotter = () => {
                   marginRight: 10,
                   marginTop: 4,
                 }}
+                className="frtcccc"
               >
                 +91 91813 23 2309
               </div>
@@ -163,6 +167,7 @@ const Fotter = () => {
                 width={24}
                 height={24}
                 style={{ marginLeft: 5 }}
+                className="ffc"
               />
               <div
                 style={{
@@ -172,6 +177,7 @@ const Fotter = () => {
                   marginRight: 10,
                   marginTop: 4,
                 }}
+                className="frtcccc"
               >
                 Somewhere in the World
               </div>

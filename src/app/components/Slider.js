@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Wave from "../img/wave.png";
 
@@ -8,6 +9,15 @@ import n4 from "../img/n4.png";
 import n5 from "../img/n5.png";
 
 const Slider = () => {
+
+  const handleClick = () => {
+    
+    const targetElement = document.getElementById('scrollToDiv');
+
+    if (targetElement) { 
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <p
@@ -37,6 +47,7 @@ const Slider = () => {
             <blockquote class="    text-gray-500   dark:text-gray-400">
               <figcaption class="flex items-center justify-center ">
                 <div
+                  className="txxt1"
                   style={{
                     fontSize: 15,
                     color: "#98989A",
@@ -53,7 +64,7 @@ const Slider = () => {
                     borderRadius: 5,
                   }}
                 >
-                  <p style={{ color: "#fff" }}>Startups</p>
+                  <p style={{ color: "#fff" }} className="txxt1" >Startups</p>
                 </div>
                 <div
                   style={{
@@ -73,7 +84,7 @@ const Slider = () => {
                     borderRadius: 5,
                   }}
                 >
-                  <p style={{ color: "#fff" }}>Enterprise leaders</p>
+                  <p style={{ color: "#fff" }} className="txxt1" >Enterprise leaders</p>
                 </div>
                 <div
                   style={{
@@ -93,7 +104,7 @@ const Slider = () => {
                     borderRadius: 5,
                   }}
                 >
-                  <p style={{ color: "#fff" }}>Media Publishers</p>
+                  <p style={{ color: "#fff" }} className="txxt1" >Media Publishers</p>
                 </div>
                 <div
                   style={{
@@ -113,7 +124,7 @@ const Slider = () => {
 
         <Image style={{ position : 'absolute' , top : 75 }} src={Wave} alt="user photo" width={"100%"} height={'auto'} />
 
-        <div style={{ marginTop: 50 }}>
+        <div style={{ marginTop: 50 , zIndex :'1000' , position :'relative'}} >
           <blockquote>
             <figcaption class="flex items-center justify-center ">
               <div
@@ -142,7 +153,9 @@ const Slider = () => {
                   padding: 15,
                   borderRadius: 10,
                   backgroundColor: "#FFE601",
+                  cursor : 'pointer'
                 }}
+                onClick={()=>{ handleClick() }}
               >
                 <p
                   style={{
@@ -150,6 +163,7 @@ const Slider = () => {
                     fontSize: "16",
                     color: "#000",
                     fontWeight: "700",
+                    cursor : 'pointer'
                   }}
                 >
                   Contact Us

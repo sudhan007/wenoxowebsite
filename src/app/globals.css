@@ -6,9 +6,27 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  overflow-x: hidden !important;
+  overflow-x: hidden !important; 
+
+}
+::-webkit-scrollbar {
+  width: 2px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -93,4 +111,66 @@ body {
     padding: 8px;
     display: block;
     margin-right: auto;
+}
+.ffc{
+  height: 24px !important;
+}
+@media only screen and (max-width: 600px) {
+   .txxt1 {
+    font-size: 9px !important;
+   }
+   .imgsss {
+    height:  130px !important;
+   }
+   .biggtxt {
+    font-size: 21px !important;
+   }
+   .smalltxt{
+    font-size: 11px !important;
+   }
+   .biggtxtdd{
+    font-size: 21px !important;
+    width: 90% !important;
+   }
+   .smalltxtdfd{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 25px  !important;
+    font-size: 11px !important;
+    width: 100% !important;
+   }
+   .imgsssxvvv {
+    height:  200px !important;
+   }
+   .fullsii{
+    width: 100% !important;
+   }
+   .biggtxtdddd{
+    font-size: 21px !important;
+    margin-top: 50px !important;
+   }
+   .dsvcsvds{
+    margin-top: 11px !important;
+    margin-top: 30px !important;
+   }
+   .dacwadc{
+    width: 117px !important;
+    height: 30px !important;
+    padding: 12px !important;
+    font-size: 8px !important;
+    margin-top: 14px !important;
+   }
+   .ffffffff{
+    width:96% !important;
+    font-size: 9px !important;
+    margin-top: 27px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+   }
+   .frtcccc{
+    font-size: 8px !important;
+   }
+   .dfcsfdsdvsafdwq{
+    margin: auto !important;
+   }
 }

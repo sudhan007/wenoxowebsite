@@ -16,7 +16,7 @@ import z6 from "../img/z6.png";
 import m1 from "../img/m1.png";
 import m2 from "../img/m2.png";
 import star from "../img/star.png";
-import logo from "../img/logo.png";
+import logo from "../img/logo.png"; 
 
 const Logo = () => {
   const responsive = {
@@ -59,7 +59,7 @@ const Logo = () => {
       two: "Founder of HungryBites.",
       three: m2,
     },
-  ];
+  ]; 
 
   return (
     <>
@@ -77,11 +77,12 @@ const Logo = () => {
           alt="user photo"
           width={"100%"}
           height={"auto"}
+          className="imgsss"
         />
         <div style={{ fontSize: "5vm", fontSize: "700" }} class="centered3">
           <Image src={b2} alt="user photo" width={"100%"} height={"auto"} />
         </div>
-        <div class="centered2">
+        <div class="centered2 smalltxt">
           Experience excellence in digital craftsmanship with our team of
           skilled professionals dedicated to delivering exceptional results.
         </div>
@@ -242,16 +243,17 @@ const Logo = () => {
           alt="user photo"
           width={"100%"}
           height={"auto"}
+          className="imgsss"
         />
         <div
           style={{ fontSize: 30, fontWeight: "700", lineHeight: 1 }}
-          class="centered"
+          class="centered biggtxtdd"
         >
           What our Clients say About us
         </div>
         <div
           style={{ paddingLeft: 70, paddingRight: 70, lineHeight: 1.5 }}
-          class="centered2"
+          class="centered2 smalltxtdfd"
         >
           At Wenoxo Technologies, we take pride in delivering exceptional
           digital products and services that drive success for our clients.
@@ -327,7 +329,7 @@ const Logo = () => {
         </Carousel>
       </div>
 
-      <div style={{ marginTop: 30, marginBottom: 30 }}>
+      <div   style={{ marginTop: 30, marginBottom: 30 }}>
         <div
           style={{
             borderWidth: 1,
@@ -343,20 +345,21 @@ const Logo = () => {
             alt="user photo"
             width={"100%"}
             height={"auto"}
+            className="imgsssxvvv "
           />
 
-          <div class="centered4">
-            <Image src={logo} alt="user photo" width={250} height={"auto"} />
+          <div class="centered4 fullsii">
+            <Image src={logo} alt="user photo" width={250} height={"auto"} className="fullsii" />
           </div>
 
-          <div style={{}} class="centered">
-            <p style={{ fontSize: 30, fontWeight: "700", lineHeight: 1 }}>
+          <div style={{}} class="centered fullsii ">
+            <p style={{ fontSize: 30, fontWeight: "700", lineHeight: 1 }} className="biggtxtdddd">
               Thank you for your Interest in Wenoxo Technologies
             </p>
           </div>
           <div
             style={{ paddingLeft: 70, paddingRight: 70, lineHeight: 1.2 }}
-            class="centered2s"
+            class="centered2s ffffffff"
           >
             At Wenoxo Technologies, we take pride in delivering exceptional
             digital products and services that drive success for our clients.
@@ -371,14 +374,14 @@ const Logo = () => {
               backgroundColor: "#424242",
               padding: 14,
             }}
-            class="centered2ss"
+            class="centered2ss dacwadc"
           >
             <p style={{ color: "#fff", textAlign: "center" }}>+91 6380058663</p>
           </div>
         </div>
       </div>
 
-      <div style={{ marginTop: 60, marginBottom: 20 }}>
+      {/* <div style={{ marginTop: 60, marginBottom: 20 }}>
         <div
           style={{
             width: "70%",
@@ -387,6 +390,7 @@ const Logo = () => {
             borderStyle: "solid",
             borderColor: "#262626",
           }}
+          className="fullsii"
         >
           <div class="grid   rounded-lg shadow-sm   md:grid-cols-2 ">
             <figure class="flex flex-col items-center justify-center p-8 text-center   rounded-t-lg md:rounded-t-none md:rounded-ss-lg  ">
@@ -433,7 +437,7 @@ const Logo = () => {
             </figure>
           </div>
 
-          <div class="grid   rounded-lg shadow-sm   md:grid-cols-1 ">
+          <div  class="grid   rounded-lg shadow-sm   md:grid-cols-1 ">
             <figure class="flex flex-col items-center justify-center p-8 text-center   rounded-t-lg md:rounded-t-none md:rounded-ss-lg  ">
               <blockquote
                 class=" mx-auto   text-gray-500   dark:text-gray-400"
@@ -576,13 +580,13 @@ const Logo = () => {
           </div>
 
           <div style={{ width : 130 , height : 45 , backgroundColor : '#FFE601' , borderRadius : 10 ,
-           marginBottom : 40 , padding : 12 , marginLeft : 'auto' , marginRight : 'auto' }} >
+           marginBottom : 40 , padding : 12 , marginLeft : 'auto' , marginRight : 'auto' , cursor : 'pointer' }} >
             <p style={{ color : '#000' , textAlign : 'center' }} >Submit</p>
           </div>
 
 
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

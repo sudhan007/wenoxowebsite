@@ -21,11 +21,12 @@ const Service = () => {
           alt="user photo"
           width={"100%"}
           height={"auto"}
+          className="imgsss"
         />
-        <div style={{ fontSize: "5vm" , fontSize : '700' }} class="centered">
+        <div style={{ fontSize: "5vm" , fontSize : '700' }} class="centered biggtxt" >
           Our Services
         </div>
-        <div class="centered2">
+        <div class="centered2 smalltxt">
           Transform your brand with our innovative digital solutions that
           captivate and engage your audience.
         </div>
