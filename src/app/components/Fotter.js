@@ -71,7 +71,7 @@ const Fotter = () => {
               </a>
             </li> */}
             <li style={{ cursor : 'pointer' }}>
-              <a style={{ color: "#fff" }} href="#" class="hover:underline">
+              <a style={{ color: "#fff" }} href="#" class="hover:underline me-4 md:me-6">
                 Contact
               </a>
             </li>

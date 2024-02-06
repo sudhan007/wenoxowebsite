@@ -75,8 +75,7 @@ const Slider = () => {
                     marginRight: 5,
                     marginLeft: 6,
                   }}
-                >
-                  ,
+                > 
                 </div>
                 <div
                   style={{
@@ -95,8 +94,7 @@ const Slider = () => {
                     marginRight: 5,
                     marginLeft: 6,
                   }}
-                >
-                  ,
+                > 
                 </div>
                 <div
                   style={{
@@ -115,8 +113,7 @@ const Slider = () => {
                     marginRight: 5,
                     marginLeft: 6,
                   }}
-                >
-                  ,
+                > 
                 </div>
               </figcaption>
             </blockquote>
