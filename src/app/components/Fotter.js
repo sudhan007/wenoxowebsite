@@ -1,3 +1,5 @@
+"use client";
+import React from 'react';
 import Image from "next/image";
 import Logo from "../img/logo.png";
 
@@ -27,7 +29,7 @@ const Fotter = () => {
                 About
               </a>
             </li>
-            <li style={{ cursor : 'pointer' }} >
+            {/* <li style={{ cursor : 'pointer' }} >
               <a
                 style={{ color: "#fff" }}
                 href="#"
@@ -44,8 +46,8 @@ const Fotter = () => {
               >
                 Work
               </a>
-            </li>
-            <li style={{ cursor : 'pointer' }} >
+            </li> */}
+            {/* <li style={{ cursor : 'pointer' }} >
               <a style={{ color: "#fff" }} href="#" class="hover:underline">
                 Proccess
               </a>
@@ -58,19 +60,29 @@ const Fotter = () => {
               >
                 About
               </a>
-            </li>
-            <li style={{ cursor : 'pointer' }} >
+            </li> */}
+            {/* <li style={{ cursor : 'pointer' }} >
               <a
                 style={{ color: "#fff" }}
                 href="#"
                 class="hover:underline me-4 md:me-6"
               >
-                Careers
+                Portfolio
               </a>
-            </li>
+            </li> */}
             <li style={{ cursor : 'pointer' }}>
               <a style={{ color: "#fff" }} href="#" class="hover:underline">
                 Contact
+              </a>
+            </li>
+            <li style={{ cursor : 'pointer' }} >
+              <a
+                style={{ color: "#fff" }}
+                href="/portfolio.pdf"
+                class="hover:underline me-4 md:me-6"
+                target="_blank"
+              >
+                Portfolio
               </a>
             </li>
           </ul>
@@ -94,6 +106,7 @@ const Fotter = () => {
                   width={60}
                   height={60}
                   style={{ marginRight: 5 }}
+                  onClick={()=>{ window.open( 'https://www.facebook.com/WenoxoTechnologies?sfnsn=wiwspwa&mibextid=RUbZ1f', '_blank');  }}
                 />
                 <Image
                   src={v2}
@@ -101,13 +114,15 @@ const Fotter = () => {
                   width={60}
                   height={60}
                   style={{ marginRight: 5 }}
+                  onClick={()=>{ window.open( 'https://twitter.com/WenoxoTech', '_blank');  }}
                 />
-                <Image
+                <Image 
                   src={v3}
                   alt="user photo"
                   width={60}
                   height={60}
                   style={{ marginRight: 5 }}
+                  onClick={()=>{ window.open( 'https://www.linkedin.com/company/wenoxotechnologies-private-limited/about/', '_blank');  }}
                 />
               </figcaption>
             </blockquote>
@@ -159,7 +174,7 @@ const Fotter = () => {
                 }}
                 className="frtcccc"
               >
-                +91 91813 23 2309
+                +91 6380058663
               </div>
               <Image
                 src={v6}
@@ -179,7 +194,7 @@ const Fotter = () => {
                 }}
                 className="frtcccc"
               >
-                Somewhere in the World
+                No.398A, 2nd Floor, MS Rd, Kattayanvilai, Nagercoil, Tamil Nadu 629003
               </div>
             </figcaption>
           </blockquote>

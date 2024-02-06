@@ -27,6 +27,7 @@ const Slider = () => {
           fontWeight: "700",
           marginTop: 70,
           lineHeight: 1,
+          color : '#fff'
         }}
       >
         Craft Your Awesome <br />
